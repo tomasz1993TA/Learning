@@ -20,20 +20,18 @@ namespace CompanyStaff
     /// </summary>
     public partial class MainWindow : Window
     {
-        public AddEmployeeWindow addEmployeeWindow;
-        public List<Employee> employeeList;
+        public AddEmployeeWindow AddEmployeeWindow;
+        public int NewId = 0;
 
         public MainWindow()
         {
-            employeeList = new List<Employee>();
-
             InitializeComponent();
         }
 
         private void addEmployeeButton_Click(object sender, RoutedEventArgs e)
         {
-            addEmployeeWindow = new AddEmployeeWindow(this);
-            addEmployeeWindow.Show();
+            AddEmployeeWindow = new AddEmployeeWindow(this);
+            AddEmployeeWindow.Show();
         }
     }
 }

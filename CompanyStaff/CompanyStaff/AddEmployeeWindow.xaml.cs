@@ -26,5 +26,21 @@ namespace CompanyStaff
             this.mainWindow = mainWindow;
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var name = nameTextbox.Text;
+            var lastname = lastNameTextbox.Text;
+
+            var newEmployee = new Employee
+            {
+                Id = mainWindow.NewId++,
+                Name = name,
+                LastName = lastname
+            };
+
+            mainWindow.employeeListDataGrid.Items.Add(newEmployee);
+            this.Close();
+        }        
     }
 }
