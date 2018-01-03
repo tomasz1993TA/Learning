@@ -1,14 +1,12 @@
-﻿<Window x:Class="CompanyStaff.MainWindow"
+﻿<Window x:Class="CompanyStaff.AddEmployeeWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CompanyStaff"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Dodawanie pracownika" Height="176.059" Width="308.899">
     <Grid>
-        <Button x:Name="addEmployeeButton" Content="Dodaj pracownika" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="112" Click="addEmployeeButton_Click"/>
-
 
     </Grid>
 </Window>
