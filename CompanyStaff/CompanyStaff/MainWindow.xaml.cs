@@ -22,6 +22,7 @@ namespace CompanyStaff
     {
         public AddEmployeeWindow AddEmployeeWindow;
         public int NewId = 0;
+        public EditEmployeeData EditEmployeeData;
 
         public MainWindow()
         {
@@ -32,6 +33,12 @@ namespace CompanyStaff
         {
             AddEmployeeWindow = new AddEmployeeWindow(this);
             AddEmployeeWindow.Show();
+        }
+
+        private void editEmployeeDataButton_Click(object sender, RoutedEventArgs e)
+        {
+            EditEmployeeData = new EditEmployeeData();
+            EditEmployeeData.Show();
         }
     }
 }

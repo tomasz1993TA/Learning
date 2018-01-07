@@ -5,13 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CompanyStaff"
         mc:Ignorable="d"
-        Title="Dodawanie pracownika" Height="160.805" Width="280.933">
+        Title="Dodawanie pracownika" Height="486.805" Width="377.933">
     <Grid>
-        <TextBox x:Name="nameTextbox" HorizontalAlignment="Left" Height="23" Margin="16,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
-        <TextBox x:Name="lastNameTextbox" HorizontalAlignment="Left" Height="23" Margin="16,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Dodaj" HorizontalAlignment="Left" Margin="168,86,0,0" VerticalAlignment="Top" Width="95" Height="34" Background="#FFE28686" Click="Button_Click"/>
-        <Label Content="Nazwisko" HorizontalAlignment="Left" Margin="16,61,0,0" VerticalAlignment="Top"/>
-        <Label Content="Imię" HorizontalAlignment="Left" Margin="16,3,0,0" VerticalAlignment="Top"/>
-
+        <TextBox x:Name="nameTextBox" HorizontalAlignment="Left" Height="25" Margin="20,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" />
+        <TextBox x:Name="lastNameTextBox" HorizontalAlignment="Left" Height="25" Margin="20,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
+        <Button Content="Dodaj" HorizontalAlignment="Left" Margin="203,390,0,0" VerticalAlignment="Top" Width="140" Height="25" Click="Button_Click" Background="#FFE28686" Foreground="Black"/>
+        <Label Content="Nazwisko" HorizontalAlignment="Left" Margin="20,84,0,0" VerticalAlignment="Top"/>
+        <Label Content="Imię" HorizontalAlignment="Left" Margin="20,14,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="emailTextBox" HorizontalAlignment="Left" Height="25" Margin="20,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
+        <TextBox x:Name="phoneNumberTextBox" HorizontalAlignment="Left" Height="25" Margin="20,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
+        <DatePicker x:Name="dateOfBirthDatePicker" HorizontalAlignment="Left" Margin="20,180,0,0" Width="140" Height="25" VerticalAlignment="Top"/>
+        <Label Content="Data urodzenia" HorizontalAlignment="Left" Margin="20,154,0,0" VerticalAlignment="Top"/>
+        <Label Content="E-mail" HorizontalAlignment="Left" Margin="20,224,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.026,-0.808"/>
+        <Label Content="Telefon kontaktowy" HorizontalAlignment="Left" Margin="20,294,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="positionComboBox" HorizontalAlignment="Left" Margin="20,390,0,0" VerticalAlignment="Top" Width="140" Height="25">
+            <ComboBoxItem Content="Magazynier" HorizontalAlignment="Left" Width="138"/>
+            <ComboBoxItem Content="Kierownik" HorizontalAlignment="Left" Width="138"/>
+            <ComboBoxItem Content="Logistyk" HorizontalAlignment="Left" Width="138"/>
+            <ComboBoxItem Content="Programista" HorizontalAlignment="Left" Width="138"/>
+            <ComboBoxItem Content="Dyrektor" HorizontalAlignment="Left" Width="138"/>
+            <ComboBoxItem Content="Prezes" HorizontalAlignment="Left" Width="138"/>
+        </ComboBox>
+        <Label Content="Stanowisko" HorizontalAlignment="Left" Margin="20,364,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-0.731"/>
     </Grid>
 </Window>

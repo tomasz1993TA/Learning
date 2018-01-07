@@ -29,18 +29,26 @@ namespace CompanyStaff
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var name = nameTextbox.Text;
-            var lastname = lastNameTextbox.Text;
-
+            var name = nameTextBox.Text;
+            var lastname = lastNameTextBox.Text;
+            var dateofbirth = dateOfBirthDatePicker.Text;
+            var email = emailTextBox.Text;
+            var phonenumber = phoneNumberTextBox.Text;
+            var position = positionComboBox.Text;
+                        
             var newEmployee = new Employee
             {
                 Id = mainWindow.NewId++,
                 Name = name,
-                LastName = lastname
+                LastName = lastname,
+                DateOfBirth = dateofbirth,
+                Email = email,
+                PhoneNumber = phonenumber,
+                Position = position
             };
 
             mainWindow.employeeListDataGrid.Items.Add(newEmployee);
             this.Close();
-        }        
+        }              
     }
 }

@@ -5,16 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CompanyStaff"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="359" Width="779">
     <Grid>
-        <Button x:Name="addEmployeeButton" Content="Dodaj pracownika" HorizontalAlignment="Left" Margin="10,289,0,0" VerticalAlignment="Top" Width="112" Click="addEmployeeButton_Click"/>
-        <DataGrid x:Name="employeeListDataGrid" ItemsSource="{Binding EmployeeList}" HorizontalAlignment="Left" Height="274" Margin="10,10,0,0" VerticalAlignment="Top" Width="497">
+        <Button x:Name="addEmployeeButton" Content="Dodaj pracownika" HorizontalAlignment="Left" Margin="10,293,0,0" VerticalAlignment="Top" Width="139" Click="addEmployeeButton_Click" Height="25"/>
+        <DataGrid x:Name="employeeListDataGrid" ItemsSource="{Binding EmployeeList}" HorizontalAlignment="Left" Height="274" Margin="10,10,0,0" VerticalAlignment="Top" Width="751">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id" Width="*" Binding="{Binding Id}"/>
                 <DataGridTextColumn Header="Imię" Width="*" Binding="{Binding Name}"/>
                 <DataGridTextColumn Header="Nazwisko" Width="*" Binding="{Binding LastName}"/>
+                <DataGridTextColumn Header="Data urodzenia" Width="*" Binding="{Binding DateOfBirth}"/>
+                <DataGridTextColumn Header="E-mail" Width="*" Binding="{Binding Email}"/>
+                <DataGridTextColumn Header="Telefon" Width="*" Binding="{Binding PhoneNumber}"/>
+                <DataGridTextColumn Header="Stanowisko" Width="*" Binding="{Binding Position}"/>
             </DataGrid.Columns>
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="{x:Type DataGridColumnHeader}">                    
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                    <Setter Property="VerticalContentAlignment" Value="Center"/>
+                    <Setter Property="FontWeight" Value="Bold"/>                    
+                </Style>
+            </DataGrid.ColumnHeaderStyle>            
         </DataGrid>
+        <Button x:Name="editEmployeeDataButton" Content="Edycja danych" HorizontalAlignment="Left" Margin="177,293,0,0" VerticalAlignment="Top" Width="139" Height="25" Click="editEmployeeDataButton_Click"/>
 
 
     </Grid>
