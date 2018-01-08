@@ -8,7 +8,7 @@
         Title="MainWindow" Height="359" Width="779">
     <Grid>
         <Button x:Name="addEmployeeButton" Content="Dodaj pracownika" HorizontalAlignment="Left" Margin="10,293,0,0" VerticalAlignment="Top" Width="139" Click="addEmployeeButton_Click" Height="25"/>
-        <DataGrid x:Name="employeeListDataGrid" ItemsSource="{Binding EmployeeList}" HorizontalAlignment="Left" Height="274" Margin="10,10,0,0" VerticalAlignment="Top" Width="751">
+        <DataGrid x:Name="employeeListDataGrid" ItemsSource="{Binding EmployeeList}" HorizontalAlignment="Left" Height="274" Margin="10,10,0,0" VerticalAlignment="Top" Width="751" SelectionChanged="employeeListDataGrid_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id" Width="*" Binding="{Binding Id}"/>
                 <DataGridTextColumn Header="Imię" Width="*" Binding="{Binding Name}"/>
